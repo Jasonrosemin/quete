@@ -1,0 +1,44 @@
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+rosemin@Rosemin:~$ ls
+Bureau            Images   Public
+Documents         Modèles  Téléchargements
+examples.desktop  Musique  Vidéos
+rosemin@Rosemin:~$ ls telechargement
+ls: impossible d'accéder à 'telechargement': Aucun fichier ou dossier de ce type
+rosemin@Rosemin:~$ téléchargements
+téléchargements : commande introuvable
+rosemin@Rosemin:~$ ls téléchargements
+ls: impossible d'accéder à 'téléchargements': Aucun fichier ou dossier de ce type
+rosemin@Rosemin:~$ ls Téléchargements
+EvaluationResults.docx
+rosemin@Rosemin:~$ pwd
+/home/rosemin
+rosemin@Rosemin:~$ cd Images
+rosemin@Rosemin:~/Images$ pwd
+/home/rosemin/Images
+rosemin@Rosemin:~/Images$ cd ..
+rosemin@Rosemin:~$ pwd
+/home/rosemin
+rosemin@Rosemin:~$ cd ..
+rosemin@Rosemin:/home$ pwd
+/home
+rosemin@Rosemin:/home$ cd ..
+rosemin@Rosemin:/$ pwd
+/
+rosemin@Rosemin:/$ ls
+bin    initrd.img      mnt   snap      var
+boot   initrd.img.old  opt   srv       vmlinuz
+cdrom  lib             proc  swapfile
+dev    lib64           root  sys
+etc    lost+found      run   tmp
+home   media           sbin  usr
+rosemin@Rosemin:/$ cd /home/rosemin
+rosemin@Rosemin:~$ cd Images
+rosemin@Rosemin:~/Images$ cd
+rosemin@Rosemin:~$ cd Images
+rosemin@Rosemin:~/Images$ cd ~
+rosemin@Rosemin:~$ cd Images
+rosemin@Rosemin:~/Images$ cd ~/Musique
+rosemin@Rosemin:~/Musique$ ^C
+rosemin@Rosemin:~/Musique$ 
